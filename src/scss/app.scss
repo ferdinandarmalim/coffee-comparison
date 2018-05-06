@@ -21,11 +21,16 @@ h1, h2{
 
 h1{
    font-size: 32px;
-   margin: 10px 0;
 }
 
 h2{
    font-size: 26px;
+   margin: 10px 0;
+   cursor: default;
+}
+
+p{
+   cursor: default;    
 }
 
 body{
@@ -44,12 +49,16 @@ input:focus {outline:0;}
     padding: 15 30;
     background-color: #222;
     color: #FFF;
+    text-decoration: none;
+    border: none;
 }
 
 .button-sm{
     padding: 10 20;
     background-color: #222;
     color: #FFF;
+    text-decoration: none;    
+    border: none;
 }
 
 .button:hover{
@@ -88,16 +97,12 @@ input:focus {outline:0;}
     border-radius: 10px;
     box-shadow: 3px 6px 15px #DDD;
     background-color: #FFF;
+    transition: box-shadow 0.3s;
 }
 
 .card:hover, .card:active{
-    animation: cardHover 0.2s;
-    animation-fill-mode:forwards;
-}
-
-@keyframes cardHover{
-    from {box-shadow: 3px 6px 15px #DDD;}
-    to {box-shadow: 6px 12px 15px #DDD;}
+    box-shadow: 7px 14px 15px #DDD;
+    transition: box-shadow 0.3s ease-out;
 }
 
 .description{
