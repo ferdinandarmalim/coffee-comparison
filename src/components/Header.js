@@ -1,10 +1,11 @@
-import React from 'react'
-// import ParcelLogo from "../img/parcel-logo.svg";
+import React from 'react';
 
-const Header = () => (
-    <div>
-        Header
-    </div>
-)
-
-export default Header
+export default class Header extends React.Component {
+    render() {
+        return (
+            <div className="header">
+                <h1>Kopi Nusantara</h1>
+            </div>
+        )
+    }
+}

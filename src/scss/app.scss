@@ -1,13 +1,97 @@
-body {
-    background-color: #fefefe;
-    text-align: center;
-    .navbar {
-      background: #21374B;
-      color: #E7DACB;
-      height: 50px;
+// Apply global SCSS here
+html{
+    /* Adjust font size */
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    /* Font varient */
+    font-variant-ligatures: none;
+    -webkit-font-variant-ligatures: none;
+    /* Smoothing */
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+}
+
+h1, h2{
+   font-family: 'Playfair Display', serif;
+   font-weight: 700;
+}
+
+h1{
+   font-size: 32px;
+   margin: 10px 0;
+}
+
+h2{
+   font-size: 26px;
+}
+
+body{
+   font-family: 'Raleway', sans-serif;
+   margin: 0;
+}
+
+button:focus {outline:0;}
+input:focus {outline:0;}
+
+.full-width{
+    width: 100%;
+}
+
+.button{
+    padding: 15 30;
+    background-color: #222;
+    color: #FFF;
+}
+
+.button-sm{
+    padding: 10 20;
+    background-color: #222;
+    color: #FFF;
+}
+
+.button:hover{
+    background-color: rgb(50, 50, 50);
+}
+
+//Header
+.header{
+    height: 64px;
+    background-color: #222;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+//Card
+.card-container{
+    padding: 160px 10% 50px 10%;
+    column-count: 3;
+    column-gap: 0.5em;
+}
+
+.cards{
+    display: inline-block;
+    width: 100%;
+}
+
+.description{
+    line-height: 160%;
+}
+
+@media screen and (max-width: 960px){
+    .card-container{
+        column-count: 2;
     }
-    h1 {
-      font-size: 40px;
-      margin-top: 30px;
+}
+
+@media screen and (max-width: 640px){
+    .card-container{
+        column-count: 1;        
+        padding: 160px 3% 50px 3%;                      
     }
-  }
+}
