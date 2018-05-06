@@ -4,7 +4,8 @@ const searchStyle = {
     height: '28px',
     borderRadius: '5px',
     padding: '20px',
-    width: '100%'
+    width: '100%',
+    fontSize: '14px'
 }
 
 const backgroundStyle = {

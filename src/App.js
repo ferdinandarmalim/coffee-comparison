@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import Header from './components/Header';
 import Search from './components/Search';
 import Card from './components/Card';
+import Footer from './components/Footer';
 import './scss/app.scss';
 import kopi from "./data/kopi.json";
 
@@ -26,12 +27,13 @@ class App extends React.Component {
                 <div className="card-container">
                     {listKopi.map(((data, i) => {
                         return (
-                            <div className="cards">
-                                <Card key={i} name={data.name} caption={data.caption} />
+                            <div className="cards" key={i}>
+                                <Card name={data.name} caption={data.caption} />
                             </div>
                         )
                     }))}
                 </div>
+                <Footer />
             </div>
         )
     }
